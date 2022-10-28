@@ -13,8 +13,10 @@ jobs:
         go-version: 1.18
     - name: Package Install 
       run: go get . 
+    - name: Buill
+      run: go build -v .
     - name: Testing
-      run: go test -v ./
+      run: go test -v .
     - name: Runing
-      run: go run -v ./
+      run: go run -v .
 
